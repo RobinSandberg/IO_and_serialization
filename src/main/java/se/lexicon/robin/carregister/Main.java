@@ -22,9 +22,9 @@ public class Main {
         JsonIO jasonIO = new JsonIO();
 
         boolean success = jasonIO.writeToJson(car2s, new File("src/main/resources/cars.json"));
-        System.out.println("Success = " + success);
+        System.out.println("Wrote cars to file success = " + success);
         success = jasonIO.writeToJson(owners, new File("src/main/resources/owners.json"));
-        System.out.println("Success = " + success);
+        System.out.println("Wrote owners to file success = " + success);
 
         List<Car2> jsonCars = jasonIO.readFromJson(new File("src/main/resources/cars.json"), ArrayList::new);
 
