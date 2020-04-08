@@ -1,0 +1,9 @@
+[ {
+  "ownerId" : 1,
+  "name" : "Robin Sandberg",
+  "birthday" : "1982-10-29"
+}, {
+  "ownerId" : 2,
+  "name" : "Eva Dhalgren",
+  "birthday" : "1978-05-16"
+} ]

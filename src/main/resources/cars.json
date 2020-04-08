@@ -1,0 +1,23 @@
+[ {
+  "carId" : 1,
+  "regNumber" : "ABC 123",
+  "brand" : "Volvo",
+  "model" : "S60",
+  "regDate" : "2005-04-21",
+  "owner" : {
+    "ownerId" : 1,
+    "name" : "Robin Sandberg",
+    "birthday" : "1982-10-29"
+  }
+}, {
+  "carId" : 2,
+  "regNumber" : "CDA 321",
+  "brand" : "Saab",
+  "model" : "9000",
+  "regDate" : "2002-02-08",
+  "owner" : {
+    "ownerId" : 2,
+    "name" : "Eva Dhalgren",
+    "birthday" : "1978-05-16"
+  }
+} ]

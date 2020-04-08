@@ -1,14 +1,17 @@
-package se.lexicon.robin.carregister;
+package se.lexicon.robin.carregister.model;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
 public class Car2 implements Serializable {
     private static int counter = 0;
-    private final int carId;
+    private int carId;
     private String regNumber;
     private String brand;
     private String model;
+    @JsonFormat(shape= JsonFormat.Shape.STRING)
     private LocalDate regDate;
     private Owner owner;
 
@@ -19,6 +22,9 @@ public class Car2 implements Serializable {
         this.model = model;
         this.regDate = regDate;
         this.owner = owner;
+    }
+
+    public Car2(){
     }
 
     public int getCarId() {
@@ -43,5 +49,17 @@ public class Car2 implements Serializable {
 
     public Owner getOwner() {
         return owner;
+    }
+
+    @Override
+    public String toString() {
+        return "Car2{" +
+                "carId=" + carId +
+                ", regNumber='" + regNumber + '\'' +
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", regDate=" + regDate +
+                ", owner=" + owner +
+                '}';
     }
 }
